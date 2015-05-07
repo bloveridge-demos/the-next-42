@@ -10,6 +10,7 @@
 </head>
 <body>
     <!-- prefix with 'x-' to bypass default browser behavior -->
-    <input x-autofocus />
+    Really delete? <input ng-model="confirm" x-autofocus/>
+    <input x-autofocus="confirm === 'YES'" />
 </body>
 </html>
