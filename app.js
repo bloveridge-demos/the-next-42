@@ -9,3 +9,13 @@ app.controller('BooksCtrl', function() {
         {title: "A Christmas Carol", author: "Charles Dickens"}
     ];
 });
+
+
+app.directive('bookList', function() {
+    return {
+        templateUrl: 'bookList.tpl.html',
+        scope: {
+            books: '=',
+        }
+    };
+});
