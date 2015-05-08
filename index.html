@@ -9,6 +9,6 @@
     <script src="app.js"></script>
 </head>
 <body ng-controller="BooksCtrl as books">
-    <book-list books="books.list"></book-list>
+    <book-list books="books.list" delete="books.deleteBook(book)"></book-list>
 </body>
 </html>

@@ -1,3 +1,4 @@
-<div ng-repeat="book in books">
+<div ng-repeat="book in bookList.books">
     {{ book.title }}, by {{ book.author }}
+    <button ng-if="bookList.canDelete" ng-click="bookList.callDeleteFn(book)">Delete</button>
 </div>
